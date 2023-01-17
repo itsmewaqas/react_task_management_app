@@ -1,0 +1,815 @@
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins-Regular";
+  color: #000;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 15px 0px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  font-family: "Poppins-Regular";
+  color: #000;
+  display: block;
+  text-align: left;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0px;
+  font-family: "Poppins-Regular";
+  display: block;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: left;
+}
+/*clearfix css*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/*clearfix css end*/
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+// variables
+$commonLetterSpacing: 1px;
+$themeFirstColor: #fff;
+$themeSecondColor: #ebecf5;
+$themeThirdColor: #1e1e2d;
+$themeFourColor: #1b1b28;
+$themeFiveColor: #c35054;
+
+$paddingAll: 15px;
+$paddingLeft: 15px;
+$paddingRight: 15px;
+$paddingTop: 15px;
+$paddingBottom: 15px;
+
+$marginAll: 15px;
+$marginLeft: 15px;
+$marginRight: 15px;
+$marginTop: 15px;
+$marginBottom: 15px;
+
+$smallFontSize: 12px;
+$mediumFontSize: 14px;
+$largeFontSize: 20px;
+$smallLineHeight: 14px;
+$mediumLineHeight: 16px;
+$largeLineHeight: 22px;
+$lightFontFamily: "Poppins-Light";
+$regularFontFamily: "Poppins-Regular";
+$mediumFontFamily: "Poppins-SemiBold";
+$boldFontFamily: "Poppins-Bold";
+
+// mixin
+@mixin textIndent {
+  text-indent: -99999em;
+}
+@mixin borderRadius {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+@mixin boxShadow {
+  box-shadow: 0px 2px 6px 0px #d4d6da;
+  -moz-box-shadow: 0px 2px 6px 0px #d4d6da;
+  -webkit-box-shadow: 0px 2px 6px 0px #d4d6da;
+}
+@mixin transitionCtrl {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+@mixin textColor1 {
+  color: #3c4858 !important;
+}
+@mixin textColor2 {
+  color: #3699ff !important;
+}
+@mixin textColor3 {
+  color: #8181a5 !important;
+}
+@mixin textColor4 {
+  color: #fff !important;
+}
+@mixin textColor5 {
+  color: #000 !important;
+}
+
+// login css start
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+.loginHeader {
+  display: block;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  background-color: #e4f3f7;
+  .logo {
+    float: left;
+    padding: 0px;
+  }
+  ul {
+    margin: 0px;
+    padding: 5px 0px;
+    list-style: none;
+    display: block;
+    float: right;
+    li {
+      margin: 0px;
+      padding: 0px;
+      display: block;
+      float: right;
+      text-align: left;
+      a {
+        padding: 10px 10px 0px;
+        font-size: 14px;
+        line-height: 18px;
+        display: block;
+        color: #111;
+        font-family: 'Poppins-Light';
+      }
+    }
+  }
+}
+.loginFooter {
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #e4f3f7;
+  p {
+    padding: 5px;
+    color: #111;
+    font-family: 'Poppins-Light';
+    margin-bottom: 0px;
+  }
+}
+.loginContent {
+  display: block;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.loginContent h1 {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 15px 0px;
+  color: #000;
+}
+.form-label {
+  margin-bottom: 0px;
+  padding: 5px 0px;
+  font-size: 12px;
+}
+
+// login css end
+
+.dashboardHeader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #e4f3f7;
+  height: 50px;
+  z-index: 99;
+  .logoArea {
+    width: 250px;
+    float: left;
+    background-color: #e4f3f7;
+    transition: all 0.4s;
+    .logo {
+      float: left;
+      padding: 0px;
+      cursor: pointer;
+    }
+  }
+  .logoAreaCollapse {
+    width: 65px;
+    height: 50px;
+    float: left;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    background: url("../images/collapseLogo.png") 0px 0px no-repeat;
+  }
+  .logoAreaCollapse img {
+    display: none;
+  }
+  .menu {
+    float: left;
+    padding: 13px 0px 0px 0px;
+    cursor: pointer;
+  }
+  .logout {
+    float: right;
+    padding: 12px 15px 0px;
+    cursor: pointer;
+  }
+}
+
+// sidebar css start
+.dashboardSidebar {
+  width: 250px;
+  float: left;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #e4f3f7;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.dashboardSidebarCollaps {
+  width: 65px;
+  float: left;
+  min-height: 100vh;
+  background-color: #e4f3f7;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 88;
+}
+.dashboardSidebarCollaps li:hover title {
+  width: 250px;
+  padding: 18.5px 15px;
+  box-sizing: border-box;
+  left: 65px;
+  top: 0px;
+  position: absolute;
+  z-index: 99;
+  display: block;
+}
+.dashboardSidebarCollaps ul li ul {
+  display: none !important;
+  padding: 0px;
+}
+.titleShow {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+}
+.titleHide {
+  display: none;
+}
+ul.sidebar {
+  display: block;
+  list-style: none;
+  margin: 0px;
+  padding: 15px 0px;
+}
+ul.sidebar li {
+  display: block;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0px 0px 10px;
+  padding: 0px;
+  position: relative;
+}
+ul.sidebar li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 0px 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  box-sizing: border-box;
+}
+ul.sidebar li i {
+  vertical-align: middle;
+  margin-right: 10px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+ul.sidebar li:hover>a,
+ul.sidebar li>a.active {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #1c2628;
+  color: #fff;
+}
+ul.sidebar li ul {
+  display: block;
+  margin: 10px 0px;
+  padding: 0px;
+}
+ul.sidebar li ul li {
+  float: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+ul.sidebar li ul li a {
+  padding: 10px 0px 10px 35px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+}
+ul.sidebar li ul li:hover>a,
+ul.sidebar li ul li>a.active {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #000;
+}
+ul.sidebar li:hover ul {
+  display: block;
+}
+.Overview {
+  background: url('../images/Overview.svg') left center no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.Accounts {
+  background: url('../images/Accounts.svg') left center no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.Cards {
+  background: url('../images/Cards.svg') left center no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.Beneficiary {
+  background: url('../images/Beneficiary.svg') left center no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.Profile {
+  background: url('../images/Profile.svg') left center no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+ul.sidebar li a:hover .Overview,
+ul.sidebar li a.active .Overview {
+  background: url('../images/OverviewActive.svg') left center no-repeat;
+  display: inline-block;
+}
+ul.sidebar li a:hover .Accounts,
+ul.sidebar li a.active .Accounts {
+  background: url('../images/AccountsActive.svg') left center no-repeat;
+  display: inline-block;
+}
+ul.sidebar li a:hover .Cards,
+ul.sidebar li a.active .Cards {
+  background: url('../images/CardsActive.svg') left center no-repeat;
+  display: inline-block;
+}
+ul.sidebar li a:hover .Beneficiary,
+ul.sidebar li a.active .Beneficiary {
+  background: url('../images/BeneficiaryActive.svg') left center no-repeat;
+  display: inline-block;
+}
+ul.sidebar li a:hover .Profile,
+ul.sidebar li a.active .Profile {
+  background: url('../images/ProfileActive.svg') left center no-repeat;
+  display: inline-block;
+}
+// sidebar css end
+.dashboardMain {
+  background-color: #e4f3f7;
+  .dashContainer {
+    background-color: #fff;
+    padding: 15px;
+    margin: 50px 0px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    .dashContainerInner {
+      overflow: hidden;
+      box-sizing: border-box;
+      position: relative;
+    }
+  }
+}
+
+.dashboardFooter {
+  padding: 15px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #e4f3f7;
+  position: relative;
+  p {
+    text-align: right;
+    color: #111;
+    font-size: 12px;
+    font-family: "Poppins-Light";
+    margin-bottom: 0px;
+  }
+}
+
+.greetingMessage {
+  float: right;
+  box-sizing: border-box;
+  padding: 0px 5px 0px;
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  line-height: 18px;
+  color: #9f9f9f;
+  span {
+    color: #1d414a;
+    display: inline-block;
+    width: 65px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 4px;
+    position: relative;
+  }
+  img{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px 5px;
+  }
+}
+.notFoundPage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 8;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// header menu css start
+.headerMenuMain {
+  position: relative;
+}
+.headerMenu {
+  float: right;
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  padding: 18px 15px 0px;
+  position: relative;
+}
+.headerMenu span {
+  background-color: #1c2628;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1.5px 0px;
+  font-size: 11px;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+.headerMenu img {
+   width: auto;
+   height: auto;
+}
+.headerMenuDetailBox {
+  position: absolute;
+  top: 52px;
+  right: 40px;
+  overflow-y: scroll;
+  height: 300px;
+  background-color: #fff;
+  width: 250px;
+  box-shadow: 0px 2px 6px 0px #d4d6da;
+  -moz-box-shadow: 0px 2px 6px 0px #d4d6da;
+  -webkit-box-shadow: 0px 2px 6px 0px #d4d6da;
+}
+.headerMenuDetailBox h1 {
+  padding: 10px 10px;
+  font-family: 'Poppins-Light';
+  color: #000;
+  box-shadow: none;
+  background-color: transparent;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  border-bottom: #e9edf5 solid 1px;
+  text-align: left;
+}
+.headerMenuDetailBox ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: block;
+}
+.headerMenuDetailBox ul li {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-family: 'Poppins-Light';
+  display: block;
+}
+.headerMenuDetailBox ul li a {
+  padding: 15px;
+  color: #333;
+  border-bottom: #ecf3f9 solid 1px;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+}
+// header menu css end
+
+.dataBox {
+  display: block;
+  margin: 30px 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.dataBoxInner {
+  display: block;
+  border: #e0e0e0 solid 1px;
+  padding: 15px;
+  margin: 15px 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+.dataBoxInner h1 {
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 15px;
+  top: -28px;
+}
+.dataBoxInner h1 span{
+  color: #000;
+  font-family:'Poppins-Regular';
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.loginLoader{
+ float:right;
+ margin: 10px 15px;
+}
+.react-datepicker__input-container:after{
+  position: absolute; 
+  right: 5px;
+  top: 5px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../images/calendar.png') right no-repeat;
+}
+.loaderCtrl{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
+.chkCtrl2{
+  float: left;
+  width: auto;
+}
+.chkCtrl2 label{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //// this is a responsive code normal css code add before this code //// */
+
+@media (min-width: 1300px) and (max-width: 1400px) {}
+
+@media (min-width: 1200px) and (max-width: 1300px) {}
+
+@media (min-width: 1024px) and (max-width: 1200px) {}
+
+@media (min-width: 999px) and (max-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 999px) {}
+
+@media only screen and (min-width: 768px) {
+.dashboardSidebarCollaps li:hover a title {
+  padding: 15px;
+  left: 65px;
+  top: 0px;
+  box-sizing: border-box;
+  position: absolute !important;
+  background-color: #1c2628 !important;
+  color: #fff;
+  z-index: 99;
+  display: inline !important;
+  box-shadow: 3px -3px 10px #e7e7e7;
+  -moz-box-shadow: 3px -3px 10px #e7e7e7;
+  -webkit-box-shadow: 3px -3px 10px #e7e7e7;
+}
+.dashboardSidebarCollaps li:hover ul {
+  display: block !important;
+  z-index: 1;
+  width: 250px;
+  left: 65px;
+  top: 25px;
+  position: absolute;
+  background-color: #e4f3f7;
+}
+.dashboardSidebarCollaps ul li ul {
+  padding: 15px 0px 0px 0px;
+}
+.logoAreaCollapse .logo {
+  display: none;
+}
+}
+@media (max-width: 767px) {
+  .dashboardMain .dashContainer {
+     margin: 0px 15px 0px;
+     clear: both;
+  }
+  .headerMenuMain {
+    clear: both;
+  }
+  .dashboardSidebarCollaps {
+     min-height: auto;
+  }
+  .dashboardHeader .logoArea {
+    width: 200px;
+    background-color:#e4f3f7;
+  }
+  .dashboardHeader {
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+  .dashboardHeader .logoAreaCollapse {
+    background-color: #e4f3f7;
+    background: none;
+    width: 200px;
+  }
+  .dashboardHeader .logoAreaCollapse img {
+    display: block;
+  }
+  .dashboardSidebar {
+    display: none;
+  }
+  .dashboardSidebarCollaps {
+    width: 100%;
+    float: none;
+  }
+  .dashboardSidebarCollaps li:hover title {
+    width: auto;
+    padding: 0;
+    left: 0;
+    top: 0px;
+    position: relative;
+    background-color: transparent;
+    z-index: 99;
+    display: block;
+  }
+  .titleHide {
+    display: block;
+    margin: -24px 30px 0px;
+  }
+  .dashboardSidebarCollaps ul li ul {
+    display: block !important;
+  }
+  ul.sidebar li ul li a {
+    padding: 10px 0px 10px 45px;
+    display: block;
+    margin: 0px;
+  }
+  ul.sidebar {
+    clear: both;
+  }
+  ul.sidebar li i {
+    top: -2px;
+}
+}
+@media (max-width: 480px) {}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Group_2" data-name="Group 2" transform="translate(-1165 -491)">
+    <g id="Group_1" data-name="Group 1">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="25" height="25" transform="translate(1165 491)" fill="none"/>
+    </g>
+    <path id="call" d="M12,23V21h7V20H15V12h4V11a6.745,6.745,0,0,0-2.05-4.95A6.745,6.745,0,0,0,12,4,6.745,6.745,0,0,0,7.05,6.05,6.745,6.745,0,0,0,5,11v1H9v8H5a2,2,0,0,1-2-2V11a8.655,8.655,0,0,1,.712-3.488,9.143,9.143,0,0,1,4.8-4.8,8.9,8.9,0,0,1,6.976,0,9.143,9.143,0,0,1,4.8,4.8A8.655,8.655,0,0,1,21,11V21a2,2,0,0,1-2,2ZM5,18H7V14H5Zm12,0h2V14H17Zm2,0ZM7,18Z" transform="translate(1166 491)"/>
+  </g>
+</svg>

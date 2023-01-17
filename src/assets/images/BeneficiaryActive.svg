@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Group_2" data-name="Group 2" transform="translate(-1165 -491)">
+    <g id="Group_1" data-name="Group 1">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="25" height="25" transform="translate(1165 491)" fill="none"/>
+    </g>
+    <path id="list" d="M4,17a1,1,0,1,1,1-1A1,1,0,0,1,4,17Zm0-4a1,1,0,1,1,1-1A1,1,0,0,1,4,13ZM4,9A1,1,0,1,1,5,8,1,1,0,0,1,4,9Zm3,8V15H21v2Zm0-4V11H21v2ZM7,9V7H21V9Z" transform="translate(1166 492)" fill="#fff"/>
+  </g>
+</svg>
